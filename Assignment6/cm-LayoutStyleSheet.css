@@ -1,0 +1,259 @@
+/*
+   Author: Edward Ma
+   Date:   November 27, 2016
+
+   Filename:         h-LayoutStyleSheet.css
+   Supporting Files: 
+
+*/
+
+@font-face {
+	font-family: 'Lintel';
+	src: url('Lintel-Regular.eot');
+	src: url('Lintel-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Lintel-Regular.woff2') format('woff2'),
+		url('Lintel-Regular.woff') format('woff'),
+		url('Lintel-Regular.ttf') format('truetype'),
+		url('Lintel-Regular.svg#Lintel-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'VarianeScript';
+    src: url('VarianeScript.eot');
+    src: url('VarianeScript.eot?#iefix') format('embedded-opentype'),
+		 url('VarianeScript.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('VarianeScript.woff2') format('woff2'),
+         url('VarianeScript.woff') format('woff'),
+         url('VarianeScript.svg#variane_scriptregular') format('svg');
+}
+
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/*| Navigation |*/
+
+body{
+	background-color: grey;
+	width: 100%;
+	min-width: 500px;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.1);
+	}
+
+nav p{
+	display: block; 
+	float: left;
+	padding: 30px 20px;
+	color: #222; 
+	font-size: .9em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	}	
+
+nav img.firstimage {
+	float:left;
+}
+
+nav img.secondimage {
+	float: right;
+}
+nav ul{
+	list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
+  }
+nav ul li{
+
+	float: left;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+    }
+
+nav ul li:hover{
+	background: rgba(0,0,0,.15);
+	}
+
+nav ul li:hover > ul{
+	display: block;
+	}
+
+nav ul li{
+	float: left;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	text-align: center;
+    }
+nav ul li a{
+	display: block; 
+	padding: 30px 20px;
+	color: #222; 
+	font-size: .9em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+nav ul ul{
+	display: none;
+	background: #fff;
+	position: absolute; 
+	top: 100%;
+	box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.1);
+}
+nav ul ul li{
+	float: none; 
+	position: relative;
+	text-align: left;
+	}
+          
+nav ul ul li a {
+	padding: 15px 30px; 
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	}
+/*       
+nav ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:0;
+	}
+*/
+
+section {
+	position: static;
+	float: left;
+	width: 99%;
+	margin-top: 90px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+section article {
+	position: static;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	background-color: rgb(243,243,243);
+	background-color: #f3f3f3;
+	padding: 10px;
+	margin-bottom:10px;
+	box-shadow:10px 10px 20px #000;
+	z-index: -1;
+	}
+	
+section article .bq{
+	position: static;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	/*margin-top: 20px; */
+	background-color: rgb(144, 12, 63);
+	background-color:  #900C3F;
+	/* padding: 10px;*/
+	padding-bottom: 90px; 
+	box-shadow:10px 10px 20px #000;
+	margin-bottom: 10px;
+	z-index: -1;
+	color: white;
+}
+/*
+aside {
+	width: 45%;
+	float: left;
+	margin-top: 70px;
+	margin-left: 10px;
+}
+*/
+article h1 {
+	font-family: 'Lintel';
+	text-align: left;
+}
+
+figure {
+	float: left;
+	margin: 5px;
+	margin-right: 10px;
+}
+
+figcaption{
+	text-align: center;
+	}
+p.p1{
+	font-family: 'Lintel';
+	font-size: 15px;
+	font-weight: bold;
+	float:left;
+	clear:left;
+}
+
+p.p2 {
+	font-family: 'Lintel';
+	font-size: 15;
+	text-align: right;
+}
+
+
+
+ul{
+    list-style-type:none;
+	font-family: 'Lintel';
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+ul p {
+	font-family: 'Lintel';
+	font-size: 15px;
+	
+}
+ul a{
+  color: white;
+}
+.skills 
+{
+	margin-left: 15px;
+	-moz-column-count: 2;
+	-moz-column-gap: 2em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 2em;
+	column-count: 2;
+	column-gap: 2em;
+}
+
+a {
+	font-family: 'Lintel';
+	font-size: 20px;
+}
+
+
+footer {
+	
+	border-top: 1px solid black;
+	color: #000000;
+	color: rgb(0,0,0);
+	text-align: center;
+	clear: left;
+	padding-top: 5px;
+}
+
+footer p {
+	font-family: 'Lintel';
+}

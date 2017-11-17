@@ -1,0 +1,249 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Edward Ma
+   Date:   October 22, 2016
+
+   Filename:         paper.css
+   Supporting Files: 
+
+*/
+@font-face {
+    font-family: 'VarianeScript';
+    src: url('VarianeScript.eot');
+    src: url('VarianeScript.eot?#iefix') format('embedded-opentype'),
+		 url('VarianeScript.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('VarianeScript.woff2') format('woff2'),
+         url('VarianeScript.woff') format('woff'),
+         url('VarianeScript.svg#variane_scriptregular') format('svg');
+}
+
+body {
+	width: 90%;
+	color: #000000;
+	color: rgb(0,0,0);
+	background-image: url("parch.jpg");
+	background-repeat: repeat;
+}
+
+header {
+	width: 99%;
+}
+header img {
+	display: block;
+	margin: auto;
+	border-style: outset;
+} 
+
+section, article, aside, blockquote {
+	display: inline-block;
+}
+
+nav {
+	font-size: 25px;
+	clear: right;
+}
+nav.horizontal {
+	font-variant: small-caps;
+	width: 90%
+	clear: right;
+}
+
+nav.horizontal a:hover{
+  background: url("parch2.jpg");
+  	color: #000000;
+	color: rgb(0,0,0);
+  	color: black;
+	font-weight: bold;
+}
+nav.horizontal ul {
+	padding: 0px;
+	margin: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  background: url( "parch.jpg" );
+	
+}
+
+nav.horizontal li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	width: 16.5%;
+	text-align: left;
+  float: left;
+}
+
+nav.horizontal li a, .dropbtn {
+  display: block;
+  background: url( "parch.jpg" );
+  color: #000000;
+	color: rgb(0,0,0);
+	color: black;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+nav.horizontal a:hover, .dropdown:hover .dropbtn {
+  background: url( "parch2.jpg" );
+  	color: #000000;
+	color: rgb(0,0,0);
+	color: black;
+	font-weight: bold;
+}
+
+nav .dropdown:hover .dropbtn{
+	background: url( "parch2.jpg" );	
+	color: #000000;
+	color: rgb(0,0,0);
+	color: black;
+	font-weight: bold;
+}
+nav li.dropdown {  
+
+  display: inline-block;
+	text-align: right;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+	font-size: 15px;
+	text-align: right;
+}
+
+nav .dropdown-content a {
+		background-color: #000000;
+	background-color: rgb(0,0,0);
+  background-color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown-content a:hover {
+	
+	background: url( "parch2.jpg" );
+		color: #000000;
+	color: rgb(0,0,0);
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav.vertical {
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-bottom: 20px;
+	border: 1px solid black;
+	float: left;
+	font-variant: small-caps;
+	font-size: 16px;
+	background-image: url("parch2.jpg");
+	background-repeat: repeat;
+	text-align: center;
+	width: 20%
+	}
+	
+nav.vertical a:hover {
+	background: url( "parch.jpg" );
+	color: #000000;
+	color: rgb(0,0,0);
+	color: black;
+	font-weight: bold;
+	}
+	
+ul {
+  list-style-type: square;
+}
+
+section {
+  position: static;
+  float: left;
+  margin: 10px;
+  width: 35%;
+  color: #FFFFFF;
+  color: rgb(255,255,255);
+  margin-left: 30px;
+  
+}
+
+section p{
+	font-family: "Time New Roman";
+}
+
+article {
+	position: static;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	margin-top: 20px;
+	background-color: rgb(101,68,86);
+	background-color: #654456;
+	padding: 10px;
+	box-shadow:10px 10px 20px #000;
+	margin-bottom: 20px
+}
+p.intro::first-letter {
+	text-transform: uppercase;
+	font-family: 'VarianeScript';
+	font-weight: bold;
+	font-size: 40px
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 25px;
+	text-align: center;
+}
+article img {
+  float: left;
+  margin: 15px;
+}
+
+aside {
+  position: static;
+  float: left;
+  margin: 10px;
+  width: 35%;
+  color: #FFFFFF;
+  color: rgb(255,255,255);
+  
+}
+
+aside img {
+	float: left;
+	margin: 15px;
+}
+blockquote {
+	position: static;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	margin-top: 20px;
+	background-color: rgb(101,68,86);
+	background-color: #654456;
+	padding: 10px;
+	box-shadow:10px 10px 20px #000;
+}
+
+footer {
+	border: 1px solid black;
+	color: #000000;
+	color: rgb(0,0,0);
+	text-align: center;
+	clear: left;
+}
